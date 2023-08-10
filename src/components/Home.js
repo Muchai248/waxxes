@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom"
 
 
 
-export default function Home(){
+export default function Home({anime}){
 //browsernavigation
 const navigate=useNavigate()
 const gotohome=()=>{
@@ -16,11 +16,14 @@ const gotocontacts=()=>{
   navigate("/contacts")
 }
 
-//fetch videos
-fetch(" http://localhost:3000/animation")
-.then((response)=>{return response.json();})  //convert to json
-.catch(()=>alert('error'))
-.then ((data)=>console.log (data))
+//mapping 
+// const list=anime.map(()=>{
+//   return(
+//     <div key={anime.id}>
+//     </div>
+//   )
+// })
+
 
 
 
