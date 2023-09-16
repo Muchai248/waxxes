@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom"
 
 
 
-export default function Home({collection, setCollection}){
+export default function Home({collection}){
 
 // const [collection, setCollection]=useState([])
 //browsernavigation
@@ -18,37 +18,23 @@ const gotocontacts=()=>{
   navigate("/contacts")
 }
 
-function getAnimations(){
-  fetch("http://localhost:8000/animation")
-  .then((r)=>r.json())
-  .then((data)=>{
-    console.log(data)
- 
-  })
-}
-useEffect(getAnimations,[])
 
-// return(
-//   <>
-//   {collection.map()}
-//   </>
-// )
-
-// const Animecard=collection?.map((animation)=>{
-//   return(
-//     <div key={animation.id} className="card col-4 m-3">
-//   <img src={animation.video} id={animation.id} className="card-img-top" alt="..." style={{width:"200px", height:"150px"}}/>
-//     <div className="card-body">
-//       <h5 className="card-title">Card title</h5>
-//       <h6 className="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-//       <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-//       <a href="#" className="card-link">Card link</a>
-//       <a href="#" className="card-link">Another link</a>
-//     </div>
-//   </div>
-//   )
-// })
-    
+const animeList=collection.map((animation)=>{
+  return(
+    <div key={animation.id} className="card col-4 m-3">
+  <iframe src={animation.video} id={animation.id} className="card-img-top" alt="..." style={{width:"200px", height:"150px"}}/>
+    <div className="card-body">
+      <h5 className="card-title">Card title</h5>
+      <h6 className="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+      <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" className="card-link">Card link</a>
+      <a href="#" className="card-link">Another link</a>
+     
+    </div>
+  </div>
+  )
+})
+   
  return(
         <>
         <div>
@@ -81,12 +67,7 @@ useEffect(getAnimations,[])
         <div>
         <img src="https://images.unsplash.com/photo-1622737133809-d95047b9e673?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80" style={{width:"100%"}}/>
         </div>
-        <div className="col-12 border border-warning"> 
-            <div className="row">
-            {/* {Animecard} */}
-            </div>
-
-         </div> 
+        {animeList}
         </>
     )
 } 
