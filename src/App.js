@@ -7,15 +7,15 @@ import React, {useState, useEffect} from 'react';
 
 function App() {
 
-const [collection, setCollection]=useState([])
-// const [anime, setAnime]=useState([])
+// const [collection, setCollection]=useState([])
+const [anime, setAnime]=useState([])
 
 function getAnimations(){
   fetch("http://localhost:8000/animation")
   .then((r)=>r.json())
   .then((data)=>{
-    setCollection(data)
-    console.log(collection)
+    setAnime(data)
+    console.log(anime)
 
   })
 }
@@ -26,7 +26,7 @@ useEffect(getAnimations,[])
   return (
     <>
 <Routes>
-  <Route path="/" element={<Home collection={collection} setCollection={setCollection} />}/>
+  <Route path="/" element={<Home anime={anime} setAnime={setAnime} />}/>
   <Route path="/Client" element={<Client/>}/>
   <Route path="/Contact" element={<Contact/>}/>
 </Routes>

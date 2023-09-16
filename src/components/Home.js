@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom"
 
 
 
-export default function Home({collection}){
+export default function Home({anime}){
 
 // const [collection, setCollection]=useState([])
 //browsernavigation
@@ -19,7 +19,7 @@ const gotocontacts=()=>{
 }
 
 
-const animeList=collection.map((animation)=>{
+const animeList=anime.map((animation)=>{
   return(
     <div key={animation.id} className="card col-4 m-3">
   <iframe src={animation.video} id={animation.id} className="card-img-top" alt="..." style={{width:"200px", height:"150px"}}/>
