@@ -1,6 +1,8 @@
 import React from "react";
 import "rc-slider/assets/index.css";
 import Slider from "rc-slider";
+// import sliderImage from './slider-background.jpg'; 
+
 const style = { width: 800, margin: 100 };
 const marks = {
   "": "",
@@ -33,6 +35,9 @@ function RcSlider() {
           defaultValue={[0]}
           allowCross={false}
           pushable />
+           {/* <div className="slider-background">
+        <img src={sliderImage} alt="Slider Background" />
+      </div> */}
       </div>
     </div><div style={style}>
 
