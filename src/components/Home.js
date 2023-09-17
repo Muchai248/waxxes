@@ -21,9 +21,9 @@ const gotocontacts=()=>{
 
 const animeList=anime.map((animation)=>{
   return(
-    <div key={animation.id} className="box col-3 m-5">
+    <div key={animation.id} className="card col-3 m-5">
   <iframe 
-  src={`https://www.youtube.com/embed/${animation?.videoUrl}`}  width='100%' height='250'
+  src={"https://www.youtube.com/embed/QV56hw7XyXs?si=KJ8_ttKeke1P3Gyc"}  width='100%' height='250'
     />
     <div className="card-body">
       <h5 className="card-title">Card title</h5>
@@ -69,7 +69,9 @@ const animeList=anime.map((animation)=>{
         <div>
         <img src="https://images.unsplash.com/photo-1622737133809-d95047b9e673?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80" style={{width:"100%"}}/>
         </div>
+        <div className="row">
         {animeList}
+        </div>
         </>
     )
 } 
