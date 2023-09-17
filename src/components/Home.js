@@ -21,8 +21,10 @@ const gotocontacts=()=>{
 
 const animeList=anime.map((animation)=>{
   return(
-    <div key={animation.id} className="card col-4 m-3">
-  <iframe src={animation.video} id={animation.id} className="card-img-top" alt="..." style={{width:"200px", height:"150px"}}/>
+    <div key={animation.id} className="box col-3 m-5">
+  <iframe 
+  src={`https://www.youtube.com/embed/${animation?.videoUrl}`}  width='100%' height='250'
+    />
     <div className="card-body">
       <h5 className="card-title">Card title</h5>
       <h6 className="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
