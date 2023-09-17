@@ -2,7 +2,7 @@ import './App.css';
 import {Routes, Route}from 'react-router-dom'
 import Home from './components/Home';
 import Client from './components/Client';
-import InstantQuote from './components/RcSlider';
+// import InstantQuote from './components/RcSlider';
 import { useState } from 'react';
 import RcSlider from './components/RcSlider';
 

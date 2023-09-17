@@ -20,7 +20,7 @@ function log(value) {
 }
 function RcSlider() {
   return (
-    <><><div>
+    <><><><><div>
       <div style={style}>
         <h1>Get an Instant Quote</h1>
         <p>Number of custom characters </p>
@@ -30,12 +30,12 @@ function RcSlider() {
           marks={marks}
           step={null}
           onChange={log}
-          defaultValue={[ 0]}
+          defaultValue={[0]}
           allowCross={false}
           pushable />
       </div>
     </div><div style={style}>
-      
+
         <p> Number of characters from our library</p>
         <Slider
           range
@@ -43,11 +43,11 @@ function RcSlider() {
           marks={marks}
           step={null}
           onChange={log}
-          defaultValue={[ 0]}
+          defaultValue={[0]}
           allowCross={false}
           pushable />
       </div></><div style={style}>
-        
+
         <p>Length of animation (Seconds)</p>
         <Slider
           range
@@ -55,12 +55,24 @@ function RcSlider() {
           marks={marks}
           step={null}
           onChange={log}
-          defaultValue={[ 0]}
+          defaultValue={[0]}
           allowCross={false}
           pushable />
-       
 
+
+      </div></><div className="checker">
+        <p>Do you need a professional voice over ?</p>
+        <input type="checkbox"></input>
+        <p>Product placement</p>
+        <input type="checkbox"></input>
+       
+      </div></><div className="checker">
+       <label for="Email"><b>Email Your Quotation</b></label>
+     <input type="email" placeholder="Email"></input>
+     <button type="submit">Send Results</button>
       </div></>
+      
+  
       
   // </div>
 // </div>

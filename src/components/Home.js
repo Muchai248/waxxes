@@ -16,7 +16,7 @@ const gotocontacts=()=>{
   navigate("/contacts")
 }
 
-const gotoinstantquotes =() =>{
+const gotoRcSlider =() =>{
   navigate("/RcSlider")
 }
 
@@ -54,7 +54,7 @@ const gotoinstantquotes =() =>{
         <button onClick={gotocontacts} className="nav-link " aria-disabled="true">Contact Us</button>
         </li>
         <li className="nav-item">
-        <button onClick={gotoinstantquotes} className="nav-link " aria-disabled="true">GetQuote</button>
+        <button onClick={gotoRcSlider} className="nav-link " aria-disabled="true">GetQuote</button>
         </li>
         </ul>
         <form className="d-flex" role="search">
