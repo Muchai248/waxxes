@@ -16,6 +16,10 @@ const gotocontacts=()=>{
   navigate("/contacts")
 }
 
+const gotoinstantquotes =() =>{
+  navigate("/RcSlider")
+}
+
 //mapping 
 // const list=anime.map(()=>{
 //   return(
@@ -48,6 +52,9 @@ const gotocontacts=()=>{
         </li>
         <li className="nav-item">
         <button onClick={gotocontacts} className="nav-link " aria-disabled="true">Contact Us</button>
+        </li>
+        <li className="nav-item">
+        <button onClick={gotoinstantquotes} className="nav-link " aria-disabled="true">GetQuote</button>
         </li>
         </ul>
         <form className="d-flex" role="search">
