@@ -5,16 +5,17 @@ import Slider from "rc-slider";
 
 const style = { width: 800, margin: 100 };
 const marks = {
-  "": "",
+  "5": "5",
   0: <strong>0</strong>,
-  26: "26",
-  40: "40",
-  75: "75",
-  100: {
+  1: "1",
+  2: "2",
+  3: "3",
+  4: "4",
+  5: {
     style: {
       color: "red",
     },
-    label: <strong>100</strong>,
+    label: <strong>5</strong>,
   },
 };
 function log(value) {
