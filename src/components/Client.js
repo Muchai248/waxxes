@@ -8,6 +8,7 @@ const handleClient=()=>{
     navigate("/client")
 }
 
+
     return(
         <div>
             <button onClick={handleClient}>Client</button>
