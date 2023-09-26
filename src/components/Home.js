@@ -17,7 +17,9 @@ const gotoclients=()=>{
 const gotocontacts=()=>{
   navigate("/contacts")
 }
-
+const gotoslider=()=>{
+  navigate("/slider")
+}
 
 const animeList=anime.map((animation)=>{
   return(
@@ -30,7 +32,6 @@ const animeList=anime.map((animation)=>{
       <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
       <a href="#" className="card-link">Card link</a>
       <a href="#" className="card-link">Another link</a>
-     
     </div>
   </div>
   )
@@ -56,11 +57,12 @@ const animeList=anime.map((animation)=>{
         <li className="nav-item">
         <button onClick={gotocontacts} className="nav-link " aria-disabled="true">Contact Us</button>
         </li>
+        <li className="nav-item">
+        <button onClick={gotoslider} className="nav-link " aria-disabled="true">RangeQuote</button>
+        </li>
         </ul>
-        <form className="d-flex" role="search">
-        <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-        <button className="btn btn-outline-success" type="submit">Search</button>
-        </form>
+       
+       
         </div>
         </div>
         </nav>

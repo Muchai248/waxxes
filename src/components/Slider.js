@@ -3,7 +3,7 @@ import "rc-slider/assets/index.css";
 import Slider from "rc-slider";
 // import sliderImage from './slider-background.jpg'; 
 
-const style = { width: 800, margin: 100 };
+const style = { width: 8000, margin: 100 };
 const marks = {
   "5": "5",
   0: <strong>0</strong>,
